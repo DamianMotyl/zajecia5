@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp"
+    tools:context=".O_nas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/kimsu_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="241dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#000000"
+            android:paddingTop="50dp"
+            android:src="@drawable/kimsu_logo" />
+
+        <TextView
+            android:id="@+id/o_nas_head"
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:background="#000000"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingTop="20dp"
+            android:text="Tylko świeże\n naturalne składniki"
+            android:textAlignment="center"
+            android:textColor="#FBF2DB"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/o_nas_tekst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingLeft="25dp"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:text="Kimsu nie lubi kompromisów, najważniejsze to jakość i smak. W menu Kimsu znajdziesz autentyczne smaki i techniki kuchni japońskiej. Pracowania sushi oferuje od klasycznych rolek nigiri i maki po bardziej pomysłowe i kreatywne rolki z unikalnymi kombinacjami smaków podawane z autorskim wasabi.\n
+            \nGdyby Kimsu miała drugie imię to pewnie brzmiałoby Ramen, który uwielbiamy i tworzymy z prawdziwą pasją. Każdy z bulionów gotuje się godzinami, aby stworzyć bogatą i aromatyczną bazę, która sprawia, że nasz ramen jest naprawdę wyjątkowy. Od klasycznego bulionu tonkotsu po lżejsze buliony chintan i paitan.\n
+            \nW ofercie znajdziesz również japońskie napoje i alkohole (Japońskie piwo i whisky). Dodatkowo szeroka oferta przystawek, tempura, yakatori, wakame, zupa miso. Spróbujesz również japońskiej herbaty i deserów z matcha.\n
+            \nNiezależnie od tego, czy szukasz spokojnej kolacji we dwoje, czy też uroczystości w grupie, Kimsu to idealne miejsce, aby delektować się smakiem jedzenia kuchni japońskiej.\n\nMożesz nas odwiedzić w
+            \nZgierzu, ul. Dąbrowskiego 20b
+            \nŁodzi, ul. Piotrkowska 142
+            \nPabianicach, ul. Groblena 8"
+            android:textAlignment="textStart"
+            android:textColor="#FBF2DB"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/o_nas_wn1"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:paddingTop="20dp"
+            android:src="@drawable/wnetrze_kimsu" />
+
+        <ImageView
+            android:id="@+id/o_nas_wn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/o_nas_wn2" />
+
+        <ImageView
+            android:id="@+id/guru_1"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:src="@drawable/restaurantguru_certificate1" />
+
+        <ImageView
+            android:id="@+id/guru_2"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/restaurantguru_certificate2" />
+
+
+    </LinearLayout>
+</ScrollView>

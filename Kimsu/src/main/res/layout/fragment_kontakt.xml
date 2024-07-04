@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="Map screen"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp"
+    android:background="@color/black"
+    tools:context=".Kontakt"
+    tools:ignore="DuplicateIds">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:id="@+id/kontakt_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="241dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="#000000"
+            android:paddingTop="50dp"
+            android:src="@drawable/kimsu_logo" />
+
+        <TextView
+            android:id="@+id/skontaktuj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingTop="30dp"
+            android:text="SKONTAKTUJ"
+            android:textAlignment="center"
+            android:textColor="#FBF2DB"
+            android:textSize="38sp" />
+
+        <TextView
+            android:id="@+id/skontaktuj2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="SIĘ Z NAMI"
+            android:textAlignment="center"
+            android:textColor="#D93C73"
+            android:textSize="38sp" />
+
+        <TextView
+            android:id="@+id/zgierz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingTop="20dp"
+            android:text="ZGIERZ, DĄBROWSKIEGO"
+            android:textAlignment="center"
+            android:textColor="#FBF2DB"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/zgierz_tel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="+48 530 355 665"
+            android:textAlignment="center"
+            android:textColor="#D93C73"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/lodz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingTop="30dp"
+            android:text="ŁÓDŹ, PIOTRKOWSKA"
+            android:textAlignment="center"
+            android:textColor="#FBF2DB"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/lodz_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="+48 533 500 942"
+            android:textAlignment="center"
+            android:textColor="#D93C73"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/pabianice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingTop="30dp"
+            android:text="PABIANICE, TKALNIA"
+            android:textAlignment="center"
+            android:textColor="#FBF2DB"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/pabianice_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="+48 575 738 494"
+            android:textAlignment="center"
+            android:textColor="#D93C73"
+            android:textSize="32sp" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/formularz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingTop="50dp"
+            android:paddingBottom="20dp"
+            android:text="Formularz\n kontaktowy"
+            android:textAlignment="center"
+            android:textColor="#FBF2DB"
+            android:textSize="32sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="#FAF1DA"
+            app:boxStrokeColor="#FBF2DB"
+            app:boxStrokeWidth="2dp"
+            app:hintTextColor="#FBF2DB">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#58686161"
+                android:hint="Imię"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:textAlignment="viewEnd"
+                android:textColor="#FBF2DB"
+                android:textColorHint="#FBF2DB"
+                android:textSize="18sp"
+                android:visibility="visible" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="#FAF1DA"
+            app:boxStrokeColor="#FBF2DB"
+            app:boxStrokeWidth="2dp"
+            app:hintTextColor="#FBF2DB">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#58686161"
+                android:hint="Nazwisko"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:textAlignment="viewEnd"
+                android:textColor="#FBF2DB"
+                android:textColorHint="#FBF2DB"
+                android:textSize="18sp"
+                android:visibility="visible" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="#FAF1DA"
+            app:boxStrokeColor="#FBF2DB"
+            app:boxStrokeWidth="2dp"
+            app:hintTextColor="#FBF2DB">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#58686161"
+                android:hint="Telefon"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:textAlignment="viewEnd"
+                android:textColor="#FBF2DB"
+                android:textColorHint="#FBF2DB"
+                android:textSize="18sp"
+                android:visibility="visible" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="#FAF1DA"
+            app:boxStrokeColor="#FBF2DB"
+            app:boxStrokeWidth="2dp"
+            app:hintTextColor="#FBF2DB">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#58686161"
+                android:hint="E-mail"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:textAlignment="viewEnd"
+                android:textColor="#FBF2DB"
+                android:textColorHint="#FBF2DB"
+                android:textSize="18sp"
+                android:visibility="visible" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="#FAF1DA"
+            app:boxStrokeColor="#FBF2DB"
+            app:boxStrokeWidth="2dp"
+            app:hintTextColor="#FBF2DB">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#58686161"
+                android:hint="Wiadomość"
+                android:hyphenationFrequency="normal"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:textAlignment="textEnd"
+                android:textColor="#FBF2DB"
+                android:textColorHint="#FBF2DB"
+                android:textSize="18sp"
+                android:visibility="visible" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Akceptuję Politykę prywatności"
+            android:textColor="#FBF2DB"
+            android:textColorLink="@color/pink" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/pink"
+            android:paddingBottom="10dp"
+            android:text="Wyślij"
+            app:cornerRadius="15dip" />
+
+
+    </LinearLayout>
+</ScrollView>

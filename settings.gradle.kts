@@ -20,5 +20,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "zajecia5"
-include(":app")
+include(":Kimsu")
  
