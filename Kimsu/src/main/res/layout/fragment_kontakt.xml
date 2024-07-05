@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
             android:paddingTop="30dp"
-            android:text="SKONTAKTUJ"
+            android:text="@string/skontaktuj"
             android:textAlignment="center"
             android:textColor="#FBF2DB"
             android:textSize="38sp" />
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
-            android:text="SIĘ Z NAMI"
+            android:text="@string/si_z_nami"
             android:textAlignment="center"
             android:textColor="#D93C73"
             android:textSize="38sp" />
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
             android:paddingTop="20dp"
-            android:text="ZGIERZ, DĄBROWSKIEGO"
+            android:text="@string/zgierz_d_browskiego"
             android:textAlignment="center"
             android:textColor="#FBF2DB"
             android:textSize="32sp" />
@@ -65,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="+48 530 355 665"
+            android:text="@string/_48_530_355_665"
             android:textAlignment="center"
             android:textColor="#D93C73"
             android:textSize="32sp" />
@@ -156,7 +156,8 @@
                 android:textColor="#FBF2DB"
                 android:textColorHint="#FBF2DB"
                 android:textSize="18sp"
-                android:visibility="visible" />
+                android:visibility="visible"
+                tools:ignore="VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -186,7 +187,8 @@
                 android:textColor="#FBF2DB"
                 android:textColorHint="#FBF2DB"
                 android:textSize="18sp"
-                android:visibility="visible" />
+                android:visibility="visible"
+                tools:ignore="VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -214,7 +216,8 @@
                 android:textColor="#FBF2DB"
                 android:textColorHint="#FBF2DB"
                 android:textSize="18sp"
-                android:visibility="visible" />
+                android:visibility="visible"
+                tools:ignore="VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -242,7 +245,8 @@
                 android:textColor="#FBF2DB"
                 android:textColorHint="#FBF2DB"
                 android:textSize="18sp"
-                android:visibility="visible" />
+                android:visibility="visible"
+                tools:ignore="VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -271,16 +275,18 @@
                 android:textColor="#FBF2DB"
                 android:textColorHint="#FBF2DB"
                 android:textSize="18sp"
-                android:visibility="visible" />
+                android:visibility="visible"
+                tools:ignore="VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Akceptuję Politykę prywatności"
+            android:text="@string/akceptuj_polityk_prywatno_ci"
             android:textColor="#FBF2DB"
-            android:textColorLink="@color/pink" />
+            android:textColorLink="@color/pink"
+            tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/button5"

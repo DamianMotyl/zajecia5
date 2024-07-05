@@ -29,6 +29,15 @@ class MainActivity : AppCompatActivity() {
         mtoggle!!.syncState()
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         ustawContent(mnawigacja)
+        if (savedInstanceState == null) {
+            loadFragment(StronaGlowna())
+            mnawigacja.setCheckedItem(R.id.strona_glowna)
+        }
+
+
+
+
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -56,18 +65,21 @@ class MainActivity : AppCompatActivity() {
 
             else -> O_nas::class.java
         }
-
         try {
             mFragment =fragmentClass.newInstance() as Fragment
         } catch (e: Exception) {
             e.printStackTrace()
         }
-
         val fragmentManager = supportFragmentManager
         fragmentManager.beginTransaction().replace(R.id.fragmentContent, mFragment!!).commit()
         menuItem.setChecked(true)
         title = menuItem.title
         mlayout?.closeDrawers()
 
+    }
+    private fun loadFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContent, fragment)
+            .commit()
     }
 }

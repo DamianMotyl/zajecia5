@@ -23,8 +23,10 @@
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:background="#000000"
+            android:contentDescription="@string/todo5"
             android:paddingTop="50dp"
-            android:src="@drawable/kimsu_logo" />
+            android:src="@drawable/kimsu_logo"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/gal_header"
@@ -35,10 +37,11 @@
             android:paddingLeft="20dp"
             android:paddingTop="20dp"
             android:paddingBottom="15dp"
-            android:text="Galeria"
+            android:text="@string/galeria"
             android:textAlignment="viewStart"
             android:textColor="#FBF2DB"
-            android:textSize="34sp" />
+            android:textSize="34sp"
+            tools:ignore="RtlSymmetry" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -50,8 +53,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/todo3"
                 android:paddingLeft="5dp"
-                android:src="@drawable/img_4853" />
+                android:src="@drawable/img_4853"
+                tools:ignore="RtlSymmetry" />
 
             <ImageView
                 android:id="@+id/gal_2"
@@ -96,6 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/todo8"
                 android:paddingLeft="5dp"
                 android:src="@drawable/img_6076" />
 
@@ -120,6 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/todo7"
                 android:paddingLeft="5dp"
                 android:src="@drawable/img_5832" />
 
@@ -145,8 +152,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
                 android:layout_weight="1"
+                android:contentDescription="@string/todo6"
                 android:paddingLeft="5dp"
-                android:src="@drawable/img_2674" />
+                android:src="@drawable/img_2674"
+                tools:ignore="RtlSymmetry" />
 
             <ImageView
                 android:id="@+id/gal_10"
@@ -154,7 +163,8 @@
                 android:layout_height="280dp"
                 android:layout_weight="1"
                 android:paddingRight="5dp"
-                android:src="@drawable/img_2958" />
+                android:src="@drawable/img_2958"
+                tools:ignore="ContentDescription" />
         </LinearLayout>
 
     </LinearLayout>

@@ -5,30 +5,39 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StronaGlowna" >
+
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
+    tools:context=".StronaGlowna">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/black"
         android:orientation="vertical">
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="300dp">
 
             <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:srcCompat="@drawable/logoblack" />
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/todo2"
+                android:src="@drawable/img_2632_2" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/glowna_zamow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
-        </LinearLayout>
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="150dp"
+                android:backgroundTint="@color/pink"
+                android:text="@string/zamow"
+                app:cornerRadius="15dip"
+                tools:ignore="TextContrastCheck" />
+        </FrameLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,19 +48,50 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="#000000"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:text="@string/zapraszamy_na"
+                android:textColor="#FBF2DB"
+                android:textSize="34sp"
+                tools:ignore="RtlSymmetry" />
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
+                android:layout_height="121dp"
+                android:background="#000000"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingLeft="25dp"
+                android:text="@string/autorskie_sushi_i_nramen"
+                android:textColor="@color/pink"
+                android:textSize="34sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:background="#000000"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:paddingRight="25dp"
+                android:text="@string/kimsu_nie_lubi_kompromis_w_najwa_niejsze_to_jako_i_smak_w_menu_kimsu_znajdziesz_autentyczne_smaki_i_techniki_kuchni_japo_skiej_n_npracowania_sushi_oferuje_od_klasycznych_rolek_nigiri_i_maki_po_bardziej_pomys_owe_i_kreatywne_rolki_z_unikalnymi_kombinacjami_smak_w_n_ngdyby_kimsu_mia_a_drugie_imi_to_pewnie_brzmia_oby_ramen_kt_ry_uwielbiamy_i_tworzymy_z_prawdziw_pasj_ka_dy_z_bulion_w_gotuje_si_godzinami_aby_stworzy_bogat_i_aromatyczn_baz_kt_ra_sprawia_e_nasz_ramen_jest_naprawd_wyj_tkowy_od_klasycznego_bulionu_tonkotsu_po_l_ejsze_buliony_chintan_i_paitan_n_nniezale_nie_od_tego_czy_szukasz_spokojnej_kolacji_we_dwoje_czy_te_uroczysto_ci_w_grupie_kimsu_to_idealne_miejsce_aby_delektowa_si_smakiem_kuchni_japo_skie"
+                android:textAlignment="textStart"
+                android:textColor="#FBF2DB"
+                android:textSize="16sp"
+                tools:ignore="VisualLintLongText" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+
+                android:paddingBottom="35dp"
+                android:text="@string/poznaj_nas"
+                tools:ignore="VisualLintButtonSize" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
