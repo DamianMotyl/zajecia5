@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
 
     android:paddingTop="50dp"
-    android:paddingBottom="50dp"
+    android:paddingBottom="35dp"
     tools:context=".StronaGlowna">
 
     <LinearLayout
@@ -28,11 +28,11 @@
                 android:src="@drawable/img_2632_2" />
 
             <Button
-                android:id="@+id/glowna_zamow"
+                android:id="@+id/btn_glowna_zamow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="150dp"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="140dp"
                 android:backgroundTint="@color/pink"
                 android:text="@string/zamow"
                 app:cornerRadius="15dip"
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:background="#000000"
                 android:fontFamily="@font/poppins_bold"
-                android:paddingLeft="25dp"
+                android:paddingStart="25dp"
                 android:paddingTop="20dp"
                 android:text="@string/zapraszamy_na"
                 android:textColor="#FBF2DB"
@@ -63,7 +63,7 @@
                 android:layout_height="121dp"
                 android:background="#000000"
                 android:fontFamily="@font/poppins_bold"
-                android:paddingLeft="25dp"
+                android:paddingStart="25dp"
                 android:text="@string/autorskie_sushi_i_nramen"
                 android:textColor="@color/pink"
                 android:textSize="34sp"

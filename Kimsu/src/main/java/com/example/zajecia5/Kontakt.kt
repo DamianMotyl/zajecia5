@@ -18,9 +18,20 @@ class Kontakt : Fragment() {
 
     private val callback = OnMapReadyCallback { googleMap ->
 
-        val sydney = LatLng(-34.0, 151.0)
-        googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+        val Zgierz = LatLng(51.85778601245475, 19.414783516316767)
+        googleMap.addMarker(MarkerOptions().position(Zgierz).title("Kimsu Zgierz"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Zgierz,10f))
+
+        val Pabianice = LatLng(51.66114954743302, 19.356873990780826)
+        googleMap.addMarker(MarkerOptions().position(Pabianice).title("Kimsu Pabianice"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Pabianice,10f))
+
+        val Lodz = LatLng(51.761031299430044, 19.459023662507445)
+        googleMap.addMarker(MarkerOptions().position(Lodz).title("Kimsu Łódź"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Lodz,10f))
+
+
+
     }
 
     override fun onCreateView(

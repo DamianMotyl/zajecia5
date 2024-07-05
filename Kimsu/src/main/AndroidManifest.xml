@@ -33,6 +33,17 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
+        <activity android:name=".Galeria"
+            android:exported="false"></activity>
+
+        <activity android:name=".O_nas"
+            android:exported="false"></activity>
+
+        <activity android:name=".Kontakt"
+            android:exported="false"></activity>
+
+        <activity android:name=".Menu"
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -8,7 +8,7 @@
     android:background="@color/black"
     android:orientation="vertical"
     android:paddingTop="25dp"
-    android:paddingBottom="25dp"
+    android:paddingBottom="35dp"
     tools:context=".Galeria">
 
     <LinearLayout
@@ -34,7 +34,7 @@
             android:layout_height="98dp"
             android:background="#000000"
             android:fontFamily="@font/poppins_bold"
-            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
             android:paddingTop="20dp"
             android:paddingBottom="15dp"
             android:text="@string/galeria"
@@ -44,6 +44,7 @@
             tools:ignore="RtlSymmetry" />
 
         <LinearLayout
+            android:id="@+id/gal_row_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -54,7 +55,7 @@
                 android:layout_height="280dp"
                 android:layout_weight="1"
                 android:contentDescription="@string/todo3"
-                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
                 android:src="@drawable/img_4853"
                 tools:ignore="RtlSymmetry" />
 
@@ -63,34 +64,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
                 android:layout_weight="1"
-                android:paddingRight="5dp"
-                android:src="@drawable/img_4444" />
+                android:contentDescription="@string/gal_2"
+                android:paddingEnd="5dp"
+                android:src="@drawable/img_4444"
+                tools:ignore="RtlSymmetry" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/gal_row_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:contentDescription="TODO"
             android:orientation="horizontal"
-            android:paddingTop="12dp">
+            android:paddingTop="12dp"
+            tools:ignore="HardcodedText">
 
             <ImageView
                 android:id="@+id/gal_3"
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
                 android:layout_weight="1"
-                android:paddingLeft="5dp"
-                android:src="@drawable/img_5610" />
+                android:contentDescription="TODO"
+                android:paddingStart="5dp"
+                android:src="@drawable/img_5610"
+                tools:ignore="ContentDescription,RtlSymmetry" />
 
             <ImageView
                 android:id="@+id/gal_4"
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
                 android:layout_weight="1"
-                android:paddingRight="5dp"
-                android:src="@drawable/img_4883" />
+                android:paddingEnd="5dp"
+                android:src="@drawable/img_4883"
+                tools:ignore="ContentDescription,RtlSymmetry" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/gal_row_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -102,20 +112,23 @@
                 android:layout_height="280dp"
                 android:layout_weight="1"
                 android:contentDescription="@string/todo8"
-                android:paddingLeft="5dp"
-                android:src="@drawable/img_6076" />
+                android:paddingStart="5dp"
+                android:src="@drawable/img_6076"
+                tools:ignore="RtlSymmetry" />
 
             <ImageView
                 android:id="@+id/gal_6"
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
                 android:layout_weight="1"
-                android:paddingRight="5dp"
-                android:src="@drawable/img_5884" />
+                android:paddingEnd="5dp"
+                android:src="@drawable/img_5884"
+                tools:ignore="ContentDescription,RtlSymmetry" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/gal_row_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -126,21 +139,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
                 android:layout_weight="1"
-                android:contentDescription="@string/todo7"
-                android:paddingLeft="5dp"
-                android:src="@drawable/img_5832" />
+                android:contentDescription="TODO"
+                android:paddingStart="5dp"
+                android:src="@drawable/img_5832"
+                tools:ignore="ContentDescription,HardcodedText,RtlSymmetry" />
 
             <ImageView
                 android:id="@+id/gal_8"
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
                 android:layout_weight="1"
-                android:paddingRight="5dp"
-                android:src="@drawable/img_5708" />
+                android:paddingEnd="5dp"
+                android:src="@drawable/img_5708"
+                tools:ignore="ContentDescription,RtlSymmetry" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/gal_row_5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
@@ -153,7 +169,7 @@
                 android:layout_height="280dp"
                 android:layout_weight="1"
                 android:contentDescription="@string/todo6"
-                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
                 android:src="@drawable/img_2674"
                 tools:ignore="RtlSymmetry" />
 
@@ -162,9 +178,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
                 android:layout_weight="1"
-                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
                 android:src="@drawable/img_2958"
-                tools:ignore="ContentDescription" />
+                tools:ignore="ContentDescription,RtlSymmetry" />
         </LinearLayout>
 
     </LinearLayout>

@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-
-    android:paddingTop="70dp"
-    android:paddingBottom="25dp"
+    android:paddingTop="25dp"
+    android:paddingBottom="40dp"
     tools:context=".O_nas">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/black">
+        android:background="@color/black"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/kimsu_logo"
@@ -24,7 +22,8 @@
             android:layout_marginTop="15dp"
             android:background="#000000"
             android:paddingTop="50dp"
-            android:src="@drawable/kimsu_logo" />
+            android:src="@drawable/kimsu_logo"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/o_nas_head"
@@ -33,7 +32,7 @@
             android:background="#000000"
             android:fontFamily="@font/poppins_bold"
             android:paddingTop="20dp"
-            android:text="Tylko świeże\n naturalne składniki"
+            android:text="@string/tylko_wie_e_n_naturalne_sk_adniki"
             android:textAlignment="center"
             android:textColor="#FBF2DB"
             android:textSize="34sp" />
@@ -44,19 +43,14 @@
             android:layout_height="wrap_content"
             android:background="#000000"
             android:fontFamily="@font/poppins_semibold"
-            android:paddingLeft="25dp"
+            android:paddingStart="25dp"
             android:paddingTop="20dp"
-            android:paddingRight="15dp"
-            android:text="Kimsu nie lubi kompromisów, najważniejsze to jakość i smak. W menu Kimsu znajdziesz autentyczne smaki i techniki kuchni japońskiej. Pracowania sushi oferuje od klasycznych rolek nigiri i maki po bardziej pomysłowe i kreatywne rolki z unikalnymi kombinacjami smaków podawane z autorskim wasabi.\n
-            \nGdyby Kimsu miała drugie imię to pewnie brzmiałoby Ramen, który uwielbiamy i tworzymy z prawdziwą pasją. Każdy z bulionów gotuje się godzinami, aby stworzyć bogatą i aromatyczną bazę, która sprawia, że nasz ramen jest naprawdę wyjątkowy. Od klasycznego bulionu tonkotsu po lżejsze buliony chintan i paitan.\n
-            \nW ofercie znajdziesz również japońskie napoje i alkohole (Japońskie piwo i whisky). Dodatkowo szeroka oferta przystawek, tempura, yakatori, wakame, zupa miso. Spróbujesz również japońskiej herbaty i deserów z matcha.\n
-            \nNiezależnie od tego, czy szukasz spokojnej kolacji we dwoje, czy też uroczystości w grupie, Kimsu to idealne miejsce, aby delektować się smakiem jedzenia kuchni japońskiej.\n\nMożesz nas odwiedzić w
-            \nZgierzu, ul. Dąbrowskiego 20b
-            \nŁodzi, ul. Piotrkowska 142
-            \nPabianicach, ul. Groblena 8"
+            android:paddingEnd="15dp"
+            android:text="@string/kimsu_nie_lubi_kompromis_w_najwa_niejsze_to_jako_i_smak_w_menu_kimsu_znajdziesz_autentyczne_smaki_i_techniki_kuchni_japo_skiej_pracowania_sushi_oferuje_od_klasycznych_rolek_nigiri_i_maki_po_bardziej_pomys_owe_i_kreatywne_rolki_z_unikalnymi_kombinacjami_smak_w_podawane_z_autorskim_wasabi_n_ngdyby_kimsu_mia_a_drugie_imi_to_pewnie_brzmia_oby_ramen_kt_ry_uwielbiamy_i_tworzymy_z_prawdziw_pasj_ka_dy_z_bulion_w_gotuje_si_godzinami_aby_stworzy_bogat_i_aromatyczn_baz_kt_ra_sprawia_e_nasz_ramen_jest_naprawd_wyj_tkowy_od_klasycznego_bulionu_tonkotsu_po_l_ejsze_buliony_chintan_i_paitan_n_nw_ofercie_znajdziesz_r_wnie_japo_skie_napoje_i_alkohole_japo_skie_piwo_i_whisky_dodatkowo_szeroka_oferta_przystawek_tempura_yakatori_wakame_zupa_miso_spr_bujesz_r_wnie_japo_skiej_herbaty_i_deser_w_z_matcha_n_nniezale_nie_od_tego_czy_szukasz_spokojnej_kolacji_we_dwoje_czy_te_uroczysto_ci_w_grupie_kimsu_to_idealne_miejsce_aby_delektowa_si_smakiem_jedzenia_kuchni_japo_skiej_n_nmo_esz_nas_odwiedzi_w_nzgierzu_ul_d_browskiego_20b_n_odzi_ul_piotrkowska_142_npabianicach_ul_groblena_8"
             android:textAlignment="textStart"
             android:textColor="#FBF2DB"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="VisualLintLongText" />
 
         <ImageView
             android:id="@+id/o_nas_wn1"
@@ -64,28 +58,40 @@
             android:layout_height="600dp"
             android:layout_gravity="center"
             android:background="#000000"
+            android:contentDescription="TODO"
             android:paddingTop="20dp"
-            android:src="@drawable/wnetrze_kimsu" />
+            android:src="@drawable/wnetrze_kimsu"
+            tools:ignore="ContentDescription,HardcodedText" />
 
         <ImageView
             android:id="@+id/o_nas_wn2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="260dp"
             android:layout_gravity="center"
-            android:src="@drawable/o_nas_wn2" />
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/o_nas_wn2"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/guru_1"
             android:layout_width="match_parent"
             android:layout_height="600dp"
-            android:src="@drawable/restaurantguru_certificate1" />
+            android:contentDescription="TODO"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/restaurantguru_certificate1"
+            tools:ignore="ContentDescription,HardcodedText" />
 
         <ImageView
             android:id="@+id/guru_2"
             android:layout_width="match_parent"
             android:layout_height="600dp"
-            android:paddingTop="20dp"
-            android:src="@drawable/restaurantguru_certificate2" />
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/restaurantguru_certificate2"
+            tools:ignore="ContentDescription" />
 
 
     </LinearLayout>

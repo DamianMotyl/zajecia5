@@ -5,7 +5,7 @@
     android:id="@+id/map"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:contentDescription="Map screen"
+    android:contentDescription="@string/map_screen"
     android:paddingTop="25dp"
     android:paddingBottom="25dp"
     android:background="@color/black"
@@ -15,6 +15,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/layout_kontakt"
         android:orientation="vertical"
         android:paddingBottom="30dp">
 
@@ -25,8 +26,9 @@
             android:layout_gravity="center"
             android:layout_marginTop="35dp"
             android:background="#000000"
-            android:paddingTop="50dp"
-            android:src="@drawable/kimsu_logo" />
+            android:paddingTop="30dp"
+            android:src="@drawable/kimsu_logo"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/skontaktuj"
@@ -76,7 +78,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
             android:paddingTop="30dp"
-            android:text="ŁÓDŹ, PIOTRKOWSKA"
+            android:text="@string/d_piotrkowska"
             android:textAlignment="center"
             android:textColor="#FBF2DB"
             android:textSize="32sp" />
@@ -86,7 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
-            android:text="+48 533 500 942"
+            android:text="@string/_48_533_500_942"
             android:textAlignment="center"
             android:textColor="#D93C73"
             android:textSize="32sp" />
@@ -97,7 +99,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
             android:paddingTop="30dp"
-            android:text="PABIANICE, TKALNIA"
+            android:text="@string/pabianice_tkalnia"
             android:textAlignment="center"
             android:textColor="#FBF2DB"
             android:textSize="32sp" />
@@ -107,17 +109,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
-            android:text="+48 575 738 494"
+            android:text="@string/_48_575_738_494"
             android:textAlignment="center"
             android:textColor="#D93C73"
             android:textSize="32sp" />
 
-        <fragment
+        <androidx.fragment.app.FragmentContainerView
             android:id="@+id/map"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:layout_marginTop="16dp" />
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="5dp" />
 
         <TextView
             android:id="@+id/formularz"
@@ -126,7 +130,7 @@
             android:fontFamily="@font/poppins_bold"
             android:paddingTop="50dp"
             android:paddingBottom="20dp"
-            android:text="Formularz\n kontaktowy"
+            android:text="@string/formularz_n_kontaktowy"
             android:textAlignment="center"
             android:textColor="#FBF2DB"
             android:textSize="32sp" />
@@ -157,7 +161,7 @@
                 android:textColorHint="#FBF2DB"
                 android:textSize="18sp"
                 android:visibility="visible"
-                tools:ignore="VisualLintTextFieldSize" />
+                tools:ignore="HardcodedText,VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -188,7 +192,7 @@
                 android:textColorHint="#FBF2DB"
                 android:textSize="18sp"
                 android:visibility="visible"
-                tools:ignore="VisualLintTextFieldSize" />
+                tools:ignore="HardcodedText,VisualLintTextFieldSize" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -207,7 +211,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#58686161"
-                android:hint="Telefon"
+                android:hint="@string/telefon"
                 android:inputType="phone"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -236,7 +240,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#58686161"
-                android:hint="E-mail"
+                android:hint="@string/e_mail"
                 android:inputType="text"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -265,7 +269,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="#58686161"
-                android:hint="Wiadomość"
+                android:hint="@string/wiadomo"
                 android:hyphenationFrequency="normal"
                 android:inputType="text"
                 android:paddingLeft="15dp"
@@ -294,7 +298,7 @@
             android:layout_height="match_parent"
             android:backgroundTint="@color/pink"
             android:paddingBottom="10dp"
-            android:text="Wyślij"
+            android:text="@string/wy_lij"
             app:cornerRadius="15dip" />
 
 

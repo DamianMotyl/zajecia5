@@ -34,10 +34,6 @@ class MainActivity : AppCompatActivity() {
             mnawigacja.setCheckedItem(R.id.strona_glowna)
         }
 
-
-
-
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

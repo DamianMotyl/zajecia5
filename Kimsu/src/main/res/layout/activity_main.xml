@@ -5,6 +5,7 @@
     android:id="@+id/main_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="70dp"
     tools:context=".MainActivity">
 
 
@@ -24,7 +25,8 @@
         app:headerLayout="@layout/header"
         app:itemIconTint="@color/gray"
         app:itemTextColor="@color/gray"
-        app:menu="@menu/drawermenu"></com.google.android.material.navigation.NavigationView>
+        app:menu="@menu/drawermenu"
+        tools:ignore="RtlHardcoded,VisualLintBounds" />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

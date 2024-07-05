@@ -6,13 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Menu" >
+    android:paddingTop="25dp"
+    android:paddingBottom="45dp"
+    tools:context=".Menu">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#000000"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -75,8 +78,8 @@
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="koreańska ostro-kwaśna fermentowana \nkapusta"
                     android:textColor="#FFFFFF"
@@ -98,7 +101,7 @@
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Kimchi"
@@ -110,14 +113,13 @@
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
                     android:layout_marginBottom="16dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="14,90 zł"
                     android:textColor="#FFFFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/button_menu_2"
-                    app:layout_constraintHorizontal_bias="0.729"
-                    app:layout_constraintStart_toEndOf="@+id/image_kimchi" />
+                    app:layout_constraintEnd_toStartOf="@+id/button_menu_2" />
 
                 <Button
                     android:id="@+id/button_menu_2"
@@ -126,11 +128,12 @@
                     android:layout_marginEnd="24dp"
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/pink"
-                    android:text="Zamów"
+                    android:text="@string/zam_w2"
                     android:textSize="10sp"
                     app:cornerRadius="15dip"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="DuplicateSpeakableTextCheck,SmallSp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -156,16 +159,18 @@
 
                 <TextView
                     android:id="@+id/textView19"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="215dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="48dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="sałatka z dwóch rodzajów wodorostów
                     \nwakame i goma wakame, marchewka
                     \nz sojowo-cytrusowym sosem ponzu"
                     android:textColor="#FFFFFF"
                     android:textSize="10sp"
-                    tools:layout_editor_absoluteX="180dp"
-                    tools:layout_editor_absoluteY="43dp" />
+                    app:layout_constraintStart_toEndOf="@+id/image_wakame"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/image_wakame"
@@ -182,21 +187,25 @@
                     android:id="@+id/textView20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Wakame"
                     android:textColor="#FFFFFF"
-                    tools:layout_editor_absoluteX="178dp"
-                    tools:layout_editor_absoluteY="16dp" />
+                    app:layout_constraintStart_toEndOf="@+id/image_wakame"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="14,90 zł"
                     android:textColor="#FFFFFF"
-                    tools:layout_editor_absoluteX="194dp"
-                    tools:layout_editor_absoluteY="104dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_menu_5" />
 
                 <Button
                     android:id="@+id/button_menu_5"
@@ -205,7 +214,7 @@
                     android:layout_marginEnd="24dp"
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/pink"
-                    android:text="Zamów"
+                    android:text="@string/zam_w5"
                     android:textSize="10sp"
                     app:cornerRadius="15dip"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -232,15 +241,18 @@
                     android:id="@+id/textView22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="krewetki smażone w panko, podawane z sosem do wyboru: unagi BBQ lub słodko-ostrym"
+                    android:text="krewetki smażone w panko,\npodawane z sosem do wyboru: unagi BBQ
+                    \nlub słodko-ostrym"
                     android:textColor="#FFFFFF"
                     android:textSize="10sp"
-                    tools:layout_editor_absoluteX="180dp"
-                    tools:layout_editor_absoluteY="43dp" />
+                    app:layout_constraintStart_toEndOf="@+id/image_krewetki"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/image_wakame2"
+                    android:id="@+id/image_krewetki"
                     android:layout_width="140dp"
                     android:layout_height="140dp"
                     android:layout_marginStart="16dp"
@@ -254,21 +266,25 @@
                     android:id="@+id/textView23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Krewetki w Panko"
                     android:textColor="#FFFFFF"
-                    tools:layout_editor_absoluteX="178dp"
-                    tools:layout_editor_absoluteY="16dp" />
+                    app:layout_constraintStart_toEndOf="@+id/image_krewetki"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="14,90 zł"
+                    android:text="44,90 zł"
                     android:textColor="#FFFFFF"
-                    tools:layout_editor_absoluteX="194dp"
-                    tools:layout_editor_absoluteY="104dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_menu_6" />
 
                 <Button
                     android:id="@+id/button_menu_6"
@@ -315,15 +331,19 @@
                     android:id="@+id/textView25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="bulion: chintan (klarowny bulion drobiowy) tare: black shoyu  (na bazie sosu sojowego i czarnego pieprzu)"
+                    android:text="bulion: chintan (klarowny bulion drobiowy)
+                    \ntare: black shoyu  (na bazie sosu sojowego
+                    \ni czarnego pieprzu)"
                     android:textColor="#FFFFFF"
                     android:textSize="10sp"
-                    tools:layout_editor_absoluteX="180dp"
-                    tools:layout_editor_absoluteY="43dp" />
+                    app:layout_constraintStart_toEndOf="@+id/image__shoyu_ramen"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/image_wakame3"
+                    android:id="@+id/image__shoyu_ramen"
                     android:layout_width="140dp"
                     android:layout_height="140dp"
                     android:layout_marginStart="16dp"
@@ -337,21 +357,25 @@
                     android:id="@+id/textView26"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Black Shoyu Ramen"
                     android:textColor="#FFFFFF"
-                    tools:layout_editor_absoluteX="178dp"
-                    tools:layout_editor_absoluteY="16dp" />
+                    app:layout_constraintStart_toEndOf="@+id/image__shoyu_ramen"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView27"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="14,90 zł"
+                    android:text="46,90 zł"
                     android:textColor="#FFFFFF"
-                    tools:layout_editor_absoluteX="194dp"
-                    tools:layout_editor_absoluteY="104dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_menu_7" />
 
                 <Button
                     android:id="@+id/button_menu_7"
@@ -387,15 +411,18 @@
                     android:id="@+id/textView28"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="48dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="bulion: tonkotsu (kremowy bulion wieprzowy) tare: tantanmen (na bazie chilli i sezamu)"
+                    android:text="bulion: tonkotsu (kremowy bulion wieprzowy)
+                    \ntare: tantanmen (na bazie chilli i sezamu)"
                     android:textColor="#FFFFFF"
                     android:textSize="10sp"
-                    tools:layout_editor_absoluteX="180dp"
-                    tools:layout_editor_absoluteY="43dp" />
+                    app:layout_constraintStart_toEndOf="@+id/image_tantnamen"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/image_wakame4"
+                    android:id="@+id/image_tantnamen"
                     android:layout_width="140dp"
                     android:layout_height="140dp"
                     android:layout_marginStart="16dp"
@@ -409,21 +436,25 @@
                     android:id="@+id/textView29"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="Wakame"
+                    android:text="Tantanmen"
                     android:textColor="#FFFFFF"
-                    tools:layout_editor_absoluteX="178dp"
-                    tools:layout_editor_absoluteY="16dp" />
+                    app:layout_constraintStart_toEndOf="@+id/image_tantnamen"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView30"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="14,90 zł"
+                    android:text="42,90 zł"
                     android:textColor="#FFFFFF"
-                    tools:layout_editor_absoluteX="194dp"
-                    tools:layout_editor_absoluteY="104dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_menu_8" />
 
                 <Button
                     android:id="@+id/button_menu_8"
@@ -459,15 +490,18 @@
                     android:id="@+id/textView31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="48dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="bulion: tonkotsu (kremowy bulion wieprzowy) tare: pasty miso"
+                    android:text="bulion: tonkotsu (kremowy bulion wieprzowy)
+                    \ntare: pasty miso"
                     android:textColor="#FFFFFF"
                     android:textSize="10sp"
-                    tools:layout_editor_absoluteX="180dp"
-                    tools:layout_editor_absoluteY="43dp" />
+                    app:layout_constraintStart_toEndOf="@+id/image_miso"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/image_wakame5"
+                    android:id="@+id/image_miso"
                     android:layout_width="140dp"
                     android:layout_height="140dp"
                     android:layout_marginStart="16dp"
@@ -481,21 +515,25 @@
                     android:id="@+id/textView32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Miso Ramen"
                     android:textColor="#FFFFFF"
-                    tools:layout_editor_absoluteX="178dp"
-                    tools:layout_editor_absoluteY="16dp" />
+                    app:layout_constraintStart_toEndOf="@+id/image_miso"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView33"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="14,90 zł"
+                    android:text="42,90 zł"
                     android:textColor="#FFFFFF"
-                    tools:layout_editor_absoluteX="194dp"
-                    tools:layout_editor_absoluteY="104dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_menu_9" />
 
                 <Button
                     android:id="@+id/button_menu_9"
@@ -509,6 +547,7 @@
                     app:cornerRadius="15dip"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -530,30 +569,34 @@
             android:layout_marginBottom="15dp"
             android:background="#000000"
             android:paddingLeft="10dp"
-            app:cardCornerRadius="50dp" >
+            app:cardCornerRadius="50dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/menu_7"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#1E1E1E">
 
                 <TextView
                     android:id="@+id/textView35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="60dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="bulion: tonkotsu (kremowy bulion wieprzowy) tare: pasty miso"
+                    android:text="łosoś grillowany, ogórek, serek,
+                    \nsos spicy-mayo"
                     android:textColor="#FFFFFF"
                     android:textSize="10sp"
-                    tools:layout_editor_absoluteX="180dp"
-                    tools:layout_editor_absoluteY="43dp" />
+                    app:layout_constraintStart_toEndOf="@+id/image_wakame6"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/image_wakame6"
                     android:layout_width="140dp"
                     android:layout_height="140dp"
                     android:layout_marginStart="16dp"
-                    android:src="@drawable/miso_ramen"
+                    android:src="@drawable/nowa_rolka"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -563,21 +606,25 @@
                     android:id="@+id/textView36"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="Miso Ramen"
+                    android:text="Sake Grill Maki"
                     android:textColor="#FFFFFF"
-                    tools:layout_editor_absoluteX="178dp"
-                    tools:layout_editor_absoluteY="16dp" />
+                    app:layout_constraintStart_toEndOf="@+id/image_wakame6"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView37"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="14,90 zł"
+                    android:text="24,90 zł"
                     android:textColor="#FFFFFF"
-                    tools:layout_editor_absoluteX="194dp"
-                    tools:layout_editor_absoluteY="104dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_menu_10" />
 
                 <Button
                     android:id="@+id/button_menu_10"
@@ -586,11 +633,12 @@
                     android:layout_marginEnd="24dp"
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/pink"
-                    android:text="Zamów"
+                    android:text="@string/zam_w"
                     android:textSize="10sp"
                     app:cornerRadius="15dip"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="SmallSp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
@@ -602,16 +650,91 @@
             android:layout_marginBottom="15dp"
             android:background="#000000"
             android:paddingLeft="10dp"
-            app:cardCornerRadius="50dp" >
+            app:cardCornerRadius="50dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/menu_8"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#1E1E1E">
 
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="56dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="tatar z łososia lub tuńczyka, ogórek,
+                    \nrolka zapiekana w panko"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/image_wakame8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_wakame8"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/tatar_maki"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Tatar Maki "
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toEndOf="@+id/image_wakame8"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="NotSibling" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="od 28,90 zł"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_menu_12" />
+
+                <Button
+                    android:id="@+id/button_menu_12"
+                    android:layout_width="96dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/pink"
+                    android:text="@string/zam_w12"
+                    android:textSize="10sp"
+                    app:cornerRadius="15dip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="SmallSp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text_Futomaki3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#000000"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingTop="20dp"
+            android:text="Nigiri"
+            android:textColor="#FBF2DB"
+            android:textSize="34sp" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_9"
@@ -620,15 +743,91 @@
             android:layout_marginBottom="15dp"
             android:background="#000000"
             android:paddingLeft="10dp"
-            app:cardCornerRadius="50dp" >
+            app:cardCornerRadius="50dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/menu_9"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#1E1E1E">
 
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="specjalnie wycięty plaster ryby,
+                    \nprzesmarowany wasabi z kulką ryżową,
+                    \npodajemy z marynowanym imbirem
+                    \ni wasabi"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/image_wakame9"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_wakame9"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/nigiri"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Nigiri"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toEndOf="@+id/image_wakame9"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="od 16,90 zł"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_menu_13" />
+
+                <Button
+                    android:id="@+id/button_menu_13"
+                    android:layout_width="96dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/pink"
+                    android:text="@string/zam_w13"
+                    android:textSize="10sp"
+                    app:cornerRadius="15dip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="SmallSp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text_Futomaki4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#000000"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingTop="20dp"
+            android:text="Hosomaki"
+            android:textColor="#FBF2DB"
+            android:textSize="34sp" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_10"
@@ -637,13 +836,63 @@
             android:layout_marginBottom="15dp"
             android:background="#000000"
             android:paddingLeft="10dp"
-            app:cardCornerRadius="50dp" >
+            app:cardCornerRadius="50dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/menu_10"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#1E1E1E"
+                android:contentDescription="TODO">
 
+                <ImageView
+                    android:id="@+id/image_wakame10"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/hosomaki_w_tempurze"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="W tempurze"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toEndOf="@+id/image_wakame10"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="20,90 zł"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_menu_14" />
+
+                <Button
+                    android:id="@+id/button_menu_14"
+                    android:layout_width="96dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/pink"
+                    android:text="@string/zam_w14"
+                    android:textSize="10sp"
+                    app:cornerRadius="15dip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="SmallSp,TooManyViews" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -654,67 +903,154 @@
             android:layout_marginBottom="15dp"
             android:background="#000000"
             android:paddingLeft="10dp"
-            app:cardCornerRadius="50dp" >
+            app:cardCornerRadius="50dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/menu_11"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#1E1E1E">
 
+
+                <ImageView
+                    android:id="@+id/image_wakame11"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/hosomaki_warzywne"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Klasyczne "
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toEndOf="@+id/image_wakame11"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="od 18,90 zł"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_menu_15" />
+
+                <Button
+                    android:id="@+id/button_menu_15"
+                    android:layout_width="96dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/pink"
+                    android:text="Zamów"
+                    android:textSize="10sp"
+                    app:cornerRadius="15dip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="HardcodedText,SmallSp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text_Futomaki5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#000000"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingTop="20dp"
+            android:text="Bao"
+            android:textColor="#FBF2DB"
+            android:textSize="34sp" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_12"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/menu_12"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#1E1E1E">
 
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="56dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="chashu z sosem unagi BBQ, pikle z ogórka,
+                    \nkukurydza, sałata rzymska"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/image_wakame12"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_wakame12"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/bao_z_chashu"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Bułeczki Bao z chashu"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toEndOf="@+id/image_wakame12"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="od 32,90 zł"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button_menu_16" />
+
+                <Button
+                    android:id="@+id/button_menu_16"
+                    android:layout_width="96dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/pink"
+                    android:text="@string/zam_w16"
+                    android:textSize="10sp"
+                    app:cornerRadius="15dip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="SmallSp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_13"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/menu_13"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_14"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/menu_14"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_15"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/menu_15"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
+        <![CDATA[
+        " >
+    ]]>
     </LinearLayout>
 </ScrollView>
